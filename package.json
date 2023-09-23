@@ -1,0 +1,11 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.5.7",
+    "bun-types": "latest",
+    "typescript": "^5.2.2"
+  }
+}
