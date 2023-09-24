@@ -11,3 +11,17 @@ export function createLinkedList(values: any[]) {
   };
   return recursive(0);
 }
+
+export function printList(head: ListNode | null) {
+  const stack: any[] = [];
+  const values: number[] = [];
+  stack.push(head)
+  while (stack.length) {
+    const top = stack.pop();
+    if (top) {
+      values.push(top.val);
+      stack.push(top.next);
+    }
+  }
+  console.log(values);
+}

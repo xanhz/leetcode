@@ -1,3 +1,6 @@
+/**
+ * @link https://leetcode.com/problems/longest-common-prefix
+ */
 function longestCommonPrefix(strs: string[]): string {
   let lcp = '';
   for (let i = 0; i < strs[0].length; ++i) {

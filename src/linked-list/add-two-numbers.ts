@@ -1,5 +1,8 @@
 import { ListNode } from '../data-structures';
 
+/**
+ * @link https://leetcode.com/problems/add-two-numbers
+ */
 function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
   let l1Node = l1, l2Node = l2;
   let root = null, prevNode = null, currNode = null;

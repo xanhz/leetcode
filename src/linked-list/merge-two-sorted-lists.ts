@@ -1,6 +1,8 @@
 import { ListNode } from '../data-structures';
-import { createLinkedList } from '../utils/linked-list';
 
+/**
+ * @link https://leetcode.com/problems/merge-two-sorted-lists
+ */
 function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode | null {
   let mergedList = null, prevNode = null, currNode = null;
 

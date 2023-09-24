@@ -1,6 +1,9 @@
 import { ListNode } from '../data-structures';
 import { createLinkedList } from '../utils/linked-list';
 
+/**
+ * @link https://leetcode.com/problems/merge-k-sorted-lists
+ */
 function mergeKLists(lists: Array<ListNode | null>): ListNode | null {
   let root = null, prevNode = null;
   let k = lists.length;

@@ -1,11 +1,14 @@
 /**
  * Using window sliding technique
+ *
+ * @link https://leetcode.com/problems/longest-substring-without-repeating-characters
  */
 function lengthOfLongestSubstring(s: string): number {
   const chars = new Set<string>();
   let fromIndex = 0;
   let maxLength = 0;
-  let i = 0, length = s.length;
+  let i = 0,
+    length = s.length;
   while (i < length) {
     const char = s.charAt(i);
     while (chars.has(char)) {
@@ -17,7 +20,7 @@ function lengthOfLongestSubstring(s: string): number {
     ++i;
   }
   return maxLength;
-};
+}
 
 lengthOfLongestSubstring('abcabcbb'); // 3 -> abc
 lengthOfLongestSubstring('bbbbb'); // 1 -> b

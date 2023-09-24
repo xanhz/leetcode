@@ -1,3 +1,6 @@
+/**
+ * @link https://leetcode.com/problems/length-of-last-word
+ */
 function lengthOfLastWord(s: string): number {
   let count = 0,
     i = 0,
